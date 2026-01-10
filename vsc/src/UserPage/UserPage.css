@@ -1,0 +1,87 @@
+/* Styles for the User Page */
+.user-page-container {
+  padding: 20px;
+  background-color: #ffffff; /* שינוי צבע הרקע ללבן */
+  color: #333;
+  min-height: 100vh;
+}
+
+.user-page-container .dark-theme {
+  background-color: #333;
+  color: white;
+}
+.user-page-main .dark-theme {
+  background-color: #333;
+  color: white;
+}
+
+.videos-section .dark-theme {
+  background-color: #333;
+  color: white;
+}
+
+.user-page-header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #fcfcfc;
+}
+
+.user-page-main {
+  margin-top: 0px;
+}
+
+.user-info-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.profile-picture-large {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.profile-picture-large img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.username-title {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.video-grid-user {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.video-item {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.video-thumbnail {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-bottom: 1px solid #ccc;
+}
+
+.video-item h3 {
+  margin: 10px;
+  font-size: 16px;
+}

@@ -1,0 +1,113 @@
+/* קובץ CSS עבור דף הנחיתה */
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0; /* רקע בצבע אפור בהיר */
+}
+
+.login-box {
+  background: white; /* רקע לבן */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.logo img {
+  width: 150px;
+}
+
+.required-fields {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #ff0000; /* רקע כפתור בצבע אדום */
+  color: white; /* צבע טקסט לבן */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #cc0000; /* רקע כפתור בצבע אדום כהה */
+}
+
+.link-button {
+  color: #ff0000; /* צבע קישור בצבע אדום */
+  text-decoration: none;
+}
+
+.link-button:hover {
+  text-decoration: underline;
+}
+
+.error {
+  color: red; /* צבע טקסט שגיאה באדום */
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  background-color: #ffebee; /* רקע רקע תיקוני שגיאה בצהוב */
+  padding: 0.5rem;
+  border: 1px solid #ffcdd2;
+  border-radius: 5px;
+}
+
+.dark-theme .login-container {
+  background-color: #333; /* רקע בצבע אפור כהה */
+  color: #fff; /* צבע טקסט לבן */
+}
+
+.dark-theme .login-box {
+  background: #444; /* רקע בצבע אפור כהה */
+  color: #fff; /* צבע טקסט לבן */
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-theme .form-control {
+  background-color: #555; /* רקע רקע הקלט של הלכה כהה */
+  color: #fff; /* צבע טקסט לבן */
+  border-color: #777; /* גבול רקע רקע הקלט של הלכה כהה */
+}
+
+.dark-theme .btn {
+  background-color: #ff0000; /* רקע כפתור בצבע אדום */
+  color: white; /* צבע טקסט לבן */
+}
+
+.dark-theme .btn:hover {
+  background-color: #cc0000; /* רקע כפתור בצבע אדום כהה */
+}
+
+.dark-theme .error {
+  color: #ffcccc; /* צבע טקסט שגיאה באדום כהה */
+  background-color: #660000; /* רקע רקע תיקוני שגיאה בצהוב */
+  border-color: #ffcccc; /* גבול רקע רקע תיקוני שגיאה בצהוב */
+}
