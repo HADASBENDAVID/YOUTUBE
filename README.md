@@ -101,7 +101,7 @@ Before setting up, ensure you have the following installed:
 
 1. *Navigate to the Android project directory:*
 
-   cd Android
+   cd android
 
 
 2. *Sync Project with Gradle*
