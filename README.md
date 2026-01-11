@@ -4,7 +4,7 @@
 ### *General Prerequisites*
 Before setting up, ensure you have the following installed:
 - *Node.js*: Download from [nodejs.org](https://nodejs.org).
-- *MongoDB*: Download and ensure it is running (MongoDB Compass or local instance).
+- *MongoDB*: Download and install MongoDB from [mongodb.com](https://www.mongodb.com).
 - *Visual Studio Code* (or another text editor): [VS Code](https://code.visualstudio.com).
 - *Android Studio*: Download from [Android Studio](https://developer.android.com/studio).
 - *g++ compiler* (for C++ server).
@@ -13,53 +13,42 @@ Before setting up, ensure you have the following installed:
 
 ### *Node.js and MongoDB Setup (Backend)*
 
-1. *Install MongoDB*
-   - Download and install MongoDB from [mongodb.com](https://www.mongodb.com).
+1.  *Clone the Repository*
+     
+   git clone https://github.com/HADASBENDAVID/YOUTUBE.git
 
-2. *Clone the Repository*
-   - Open the terminal and run:
-     
-     git clone -b "WEB&SERVER" https://github.com/HADASKAHANA1/YOUTUBE.git
-     
-     cd YOUTUBE
-     
-     cd serverApi
+   cd YOUTUBE
+
+   cd serverApi
+
      
 
-3. *Install Dependencies*
-   - Run the following command to install necessary dependencies:
+2. *Install Dependencies*
     
-     npm install
-     
-   - Install mongoose to connect to MongoDB:
-     
-     npm install mongoose
+   npm install
+
+   npm install mongoose
+
+   npm install uuid
+
+
+3. *Initialize Database*
+
+   node addDefaultData.js
      
 
-4. *Initialize Database*
-   - Run the command to seed the database with default data:
-    
-     node addDefaultData.js
-     
-
-5. *Additional Setup:*
-   - Install uuid package for unique identifiers:
-    
-     npm install uuid
-     
-   - Create an uploads directory for video uploads:
+5. *Create an uploads directory*
    
-     cd public
+   cd public
      
-     mkdir uploads
+   mkdir uploads
      
-     cd ..
+   cd ..
      
 
-### *Start the Node.js Server*
-To start the server that connects to MongoDB, run:
+6. *Start the Node.js Server*
 
-node app.js
+   node app.js
 
 
 ---
@@ -68,19 +57,17 @@ node app.js
 
 1. *Navigate to the React project directory:*
    
-   cd vsc/src
+   cd 'web/src'
    
 
 2. *Install Dependencies*
-   - Run the following command to install React dependencies:
     
-     npm install
+   npm install
      
 
 3. *Start the React Frontend*
-   - Once the dependencies are installed, start the frontend:
-     
-     npm start
+
+   npm start
      
 
 ---
@@ -88,9 +75,8 @@ node app.js
 ### *C++ Server Setup*
 
 1. *Install WSL (Windows Subsystem for Linux)*
-   - Run the following commands:
-   
-     wsl --install
+
+   wsl --install
      
 
 2. *Open Visual Studio Code with WSL*
@@ -101,29 +87,27 @@ node app.js
      
 
 3. *Compile and Run the C++ Server*
-   - Compile the C++ server:
      
-     g++ server.cpp -o server
-     
-   - Run the C++ server:
-    
-     ./server
+   g++ server.cpp -o server
+         
+   ./server
      
 
 ---
 
 ### *Android App Setup*
 
-1. *Clone the Android Repository*
-   - Run the following commands to clone the Android app:
-     
-     git clone -b ANDROID https://github.com/HADASKAHANA1/YOUTUBE.git
-     
+1. *Navigate to the Android project directory:*
+
+   cd Android
+
 
 2. *Sync Project with Gradle*
+
    - Open Android Studio and sync the project with Gradle files.
 
 3. *Run the Android App*
+
    - Set up an emulator (API 30, Android 11.0 ("R")) for better performance. You can create a new emulator in *Tools > Device Manager > Create Device*.
    - Press the green arrow or use the shortcut *Shift + F10* to run the app.
 
