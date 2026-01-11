@@ -11,13 +11,15 @@ Before setting up, ensure you have the following installed:
 
 ---
 
-### *Node.js and MongoDB Setup (Backend)*
-
-1.  *Clone the Repository*
+ *Clone the Repository*
      
    git clone https://github.com/HADASBENDAVID/YOUTUBE.git
-
+   
    cd YOUTUBE
+
+### *Node.js and MongoDB Setup (Backend)*
+
+1. *Navigate to the server directory:*
 
    cd serverApi
 
